@@ -7,7 +7,6 @@ Split documents into manageable chunks for processing.
 Embed document chunks into a vector store for similarity searches.
 Create a RAG chain to generate answers to user questions based on the document content.
 Deploy the application using Streamlit.
-CI/CD pipeline using GitHub Actions.
 Prerequisites
 Python 3.10+
 OpenAI API key
@@ -48,15 +47,12 @@ Project Structure
 app.py: The main Streamlit application.
 rag_langchain_helper.py: Helper functions for loading documents, splitting text, embedding chunks, creating the RAG chain, and generating answers.
 requirements.txt: List of required Python packages.
-.github/workflows/ci-cd.yml: GitHub Actions workflow for CI/CD pipeline.
-CI/CD Pipeline
-The CI/CD pipeline is configured using GitHub Actions. It includes the following steps:
+It includes the following steps:
 
 Checkout the code.
 Set up Python.
 Install dependencies.
 Run tests (you can add your test commands).
-Lint the code using flake8.
 Deploy the application using Streamlit (ensure you have configured the necessary credentials in GitHub Secrets).
 Example requirements.txt
 txt
