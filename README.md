@@ -38,7 +38,12 @@ Run the Streamlit application:
 
 sh
 Copy code
-streamlit run app.py
+# Website_QnA_Chatbot
+
+To run this app use these Docker commands: 
+sudo docker build -t qna-app
+sudo docker run -p 8501:8501 qna-app
+
 Open your web browser and go to http://localhost:8501.
 
 Enter a website link and ask a question related to the content of that website. The app will display the generated answer.
@@ -75,4 +80,3 @@ LangChain
 Streamlit
 OpenAI
 
-# Website_QnA_Chatbot
